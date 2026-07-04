@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+dist/
+build/
+out/
+.next/
+__pycache__/
+.DS_Store
