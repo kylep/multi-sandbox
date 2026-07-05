@@ -21,12 +21,11 @@ Their full git history remains in `multi`'s history.
 | `agent-loops/` | macbook-security-loop experiment |
 | `branch-header-extension/` | Browser extension experiment |
 | `games/` | kid-bot-battle-sim, robotext-battle, sillyapp, snake (robot-battle, the maintained web game, stayed in multi) |
-| `llm-client/` | Next.js LLM chat client (v0.3.1 at demotion) |
 | `macos-utils/` | macOS utility scripts |
-| `mods/` | Stellaris mods (3x-bigger-worlds, multi-megastructures) |
+| `mods/` | Old Minecraft mod (the maintained Stellaris/HOI4 mods stayed in multi) |
 | `openclaw-skills/` | OpenClaw skills experiment |
 | `infra/aws/` | Old AWS infra |
 | `infra/mac-setup/` | Mac setup scripts |
 | `infra/openclaw-k8s/` | OpenClaw k8s manifests (never deployed to the current cluster) |
 | `infra/ai-lint-toolkit/` | Lint toolkit container experiment |
-| `attic/` | Loose artifacts from multi's repo root: old plans (`docs/`), TODO.md, prompt-readme.md, stale gitlab-ci.yml, pai session logs |
+| `attic/` | Loose artifacts from multi's repo root: old plans (`docs/`), TODO.md, prompt-readme.md, stale gitlab-ci.yml |
