@@ -28,4 +28,5 @@ Their full git history remains in `multi`'s history.
 | `infra/mac-setup/` | Mac setup scripts |
 | `infra/openclaw-k8s/` | OpenClaw k8s manifests (never deployed to the current cluster) |
 | `infra/ai-lint-toolkit/` | Lint toolkit container experiment |
+| `infra/containers/` | 2022 ubuntu:jammy + Poetry base image; last consumer was kytrade's pre-rebuild Dockerfile (demoted 2026-07-05) |
 | `attic/` | Loose artifacts from multi's repo root: old plans (`docs/`), TODO.md, prompt-readme.md, stale gitlab-ci.yml |
