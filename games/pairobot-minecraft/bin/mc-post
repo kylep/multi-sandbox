@@ -1,0 +1,7 @@
+#!/bin/sh
+# usage: mc-post "message"  -> posts to #minecraft as LaptopAI (token read from file, never printed)
+. "$HOME/gh/claude-code-plays-minecraft/.runtime/notes/private.env"
+F="$HOME/.config/pai-minecraft-discord-token"
+python3 -c 'import json,sys;print(json.dumps({"content":sys.argv[1][:1900],"allowed_mentions":{"parse":[]}}))' "$1" > /tmp/mcpost.$$.json
+curl -s -o /dev/null -w "%{http_code}\n" -H "Authorization: Bot $(tr -d '\n\r ' < "$F")" -H "Content-Type: application/json" -d @/tmp/mcpost.$$.json https://discord.com/api/v10/channels/$MC_DISCORD_CHANNEL/messages
+rm -f /tmp/mcpost.$$.json
